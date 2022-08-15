@@ -1,0 +1,170 @@
+@import "./_reset.css";
+
+:root {
+  --clr-gray: hsl(0, 0%, 95%);
+  --clr-primary-light: hsl(253, 64%, 86%);
+  --clr-primary: hsl(248, 43%, 56%);
+  --clr-primary-dark: hsl(248, 41%, 46%);
+  --clr-shadow: hsl(0, 0%, 86%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+.header-container {
+  margin: 0 2ch;
+  border: 8px solid var(--clr-primary);
+  border-radius: 16px;
+  padding: 5ch;
+  box-shadow: 0px 0px 12px var(--clr-primary-dark);
+  background-color: var(--clr-white);
+}
+
+.header-container h2 {
+  font-size: 200%;
+  text-align: center;
+}
+
+.header-container .event-date-range {
+  font-size: 150%;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 2em;
+}
+
+.header-container .event-detail-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8rem;
+}
+
+.header-container .venue-card .venue-name {
+  font-size: 126%;
+  font-weight: bold;
+}
+
+.header-container .venue-card .venue-address-block {
+  padding-left: 2ch;
+  font-size: 86%;
+}
+
+.header-container .event-detail-container .event-booth-stats {
+  margin-top: auto;
+  text-align: right;
+}
+
+.header-container .event-detail-container .event-booth-stats span {
+  font-weight: bold;
+  font-size: 125%;
+}
+
+.header-container .event-booth-tags {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.header-container .event-booth-tags .tag,
+.event-card .event-tags .tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 1ch;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  font-style: italic;
+}
+
+.header-container .venue-contact-container .venue-contact-title {
+  font-size: 126%;
+  font-weight: bold;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.event-card .event-date-range {
+  margin-top: 0.5em;
+  padding-left: 6rem;
+  font-size: 125%;
+  font-style: italic;
+}
+
+.event-card .event-verified {
+  position: absolute;
+  transform: translate(-0px, -40px);
+}
+
+.event-card .event-title {
+  padding: 1ch 0;
+  text-align: center;
+  font-size: 225%;
+}
+
+.event-card .event-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.event-card .event-info-container .address,
+.event-card .event-info-container .available-booths {
+  border: 1px solid var(--clr-shadow);
+  border-radius: 6px;
+  padding: 1em 2em;
+  line-height: 2;
+  font-size: 112.5%;
+}
+
+.event-card .event-info-container .available-booths {
+  text-align: right;
+}
+
+.event-card .event-info-container .available-booths span {
+  font-size: 112.5%;
+  font-weight: bold;
+}
+
+.event-card .event-description {
+  font-weight: 200;
+  margin: 2em 15%;
+}
+
+.event-card .event-tags {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+}
+
+.admin-dashboard h2 {
+  text-align: center;
+  font-size: 225%;
+}
+
+.admin-dashboard .event-container p {
+  padding: 1em 0;
+  margin-left: 15%;
+  font-size: 125%;
+}
+
+.admin-dashboard .event-container span {
+  float: right;
+  transform: translateY(-10px);
+  margin-right: 25%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 112.5%;
+  width: 50px;
+  border: 1px solid var(--clr-gray);
+  border-radius: 4px;
+  padding: 0.25em 0.25em;
+  box-shadow: 0 0 2px;
+}
+
+.stats-container p {
+  text-align: center;
+  padding-top: 0.5ch 0 2ch;
+  font-size: 175%;
+  font-weight: bold;
+}
